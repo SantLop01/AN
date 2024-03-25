@@ -2,8 +2,13 @@
 const slider = document.getElementById('list__products');
 const bullets = document.querySelectorAll('.bullets__item');
 
-/* Evitamos el desplazamiento al hacer scroll */
+/* Evitamos el desplazamiento al mover la rueda del mouse */
 slider.addEventListener('wheel', (e) => {
+    e.preventDefault();
+});
+
+/* Evitamos el desplazamiento en moviles */
+slider.addEventListener('touchmove', (e) => {
     e.preventDefault();
 });
 
@@ -35,8 +40,13 @@ bullets.forEach((bullet) => {
 const brandsContainer = document.getElementById('list__brands');
 const itemsBullets = document.querySelectorAll('.item');
 
-/* Evitamos el desplazamiento al hacer scroll */
+/* Evitamos el desplazamiento al mover la rueda del mouse */
 brandsContainer.addEventListener('wheel', (e) => {
+    e.preventDefault();
+});
+
+/* Evitamos el desplazamiento en moviles */
+brandsContainer.addEventListener('touchmove', (e) => {
     e.preventDefault();
 });
 
