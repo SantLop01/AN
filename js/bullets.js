@@ -7,11 +7,6 @@ slider.addEventListener('wheel', (e) => {
     e.preventDefault();
 });
 
-/* Evitamos el desplazamiento en moviles */
-slider.addEventListener('touchmove', (e) => {
-    e.preventDefault();
-});
-
 /* Función para la nevegación de productos */
 bullets.forEach((bullet) => {
     bullet.addEventListener('click', () => {
@@ -42,11 +37,6 @@ const itemsBullets = document.querySelectorAll('.item');
 
 /* Evitamos el desplazamiento al mover la rueda del mouse */
 brandsContainer.addEventListener('wheel', (e) => {
-    e.preventDefault();
-});
-
-/* Evitamos el desplazamiento en moviles */
-brandsContainer.addEventListener('touchmove', (e) => {
     e.preventDefault();
 });
 
