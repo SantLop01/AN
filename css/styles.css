@@ -509,6 +509,7 @@ img {
     width: 100%;
     margin-top: var(--spacing-68);
     overflow: auto;
+    scrollbar-width: none;
 }
 
 .brands__list .brands__item {
@@ -1046,6 +1047,7 @@ img {
         display: flex;
         height: 180px;
         overflow: auto;
+        scrollbar-width: none;
     }
     .products__list .products__item {
         min-width: 180px;
